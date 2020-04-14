@@ -1,0 +1,317 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #d8d8d8;
+}
+/*
+.nav-item {
+  transition: 0.5s;
+  letter-spacing: 2px;
+}
+
+.nav-item:hover {
+  text-decoration: none;
+  color: teal;
+  background-color: #d8d8d8;
+}
+
+.brand-logo {
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.brand-logo:hover {
+  text-decoration: none;
+  color: teal;
+}
+*/
+
+.nav-link {
+  text-decoration: none;
+  color: teal;
+}
+
+header {
+  width: 100%;
+  height: 640px;
+  /*background: url('https://www.healthcarereformmagazine.com/wp-content/uploads/2019/03/Personal-Trainer-1.jpg');*/
+  background: url(/images/min.PNG);
+  background-repeat: no-repeat;
+  background-position: top;
+  /*background-attachment: fixed;*/
+  background-size: 100%;
+  overflow: hidden;
+}
+
+.head-content {
+  color: #d8d8d8;
+  position: relative;
+  top: 35%;
+  left: 25%;
+}
+
+.head-content h2 {
+  margin: 10px;
+}
+
+.btn-header {
+  text-decoration: none;
+  color: teal;
+  font-size: 20px;
+  border: 1px solid #d8d8d8;
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  transition: 0.5s;
+  position: absolute;
+  left: 15px;
+  border-radius: 5px;
+}
+
+.btn-header:hover {
+  text-decoration: none;
+  color: teal;
+  background-color: #d8d8d8;
+  transform: translateX(5px);
+}
+
+.home-body {
+  background-color: #d8d8d8;
+}
+
+@media (max-width: 750px) {
+  .header {
+    height: 30%;
+  }
+  .head-content {
+    top: 10%;
+    left: 40%;
+  }
+  .head-content h2 {
+    font-size: 18px;
+  }
+  .btn-header {
+    background-color: #d8d8d8;
+    left: 17%;
+    font-size: 17px;
+  }
+  .home-body {
+    position: absolute;
+    top: 38%;
+  }
+}
+
+.actImage {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('https://img.grouponcdn.com/iam/3ofGLASK6uPFsWcgf1syWyBzAWth/3o-2048x1229/v1/c700x420.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.activities {
+  margin-left: 90px;
+  margin-right: 90px;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  transition: .5s;
+  margin: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  letter-spacing: 1px;
+  padding-top: 5px;
+
+}
+
+.card img {
+  height: 350px;
+}
+
+@media (max-width: 1040px) {
+  .activities {
+    grid-template-columns: 1fr 1fr;
+  }
+  .actImage {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('https://img.grouponcdn.com/iam/3ofGLASK6uPFsWcgf1syWyBzAWth/3o-2048x1229/v1/c700x420.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 750px) {
+  .activities {
+    margin-left: 30px;
+    /*margin-right: 90px;*/
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card {
+    width: 150px;
+    height: 250px;
+    text-align: center;
+    transition: .5s;
+    margin: 10px;
+  }
+  .card .actLink {
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+  
+  .card img {
+    height: 190px;
+  }
+  .activities {
+    grid-template-columns: 1fr 1fr;
+  }
+  .actImage {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('https://img.grouponcdn.com/iam/3ofGLASK6uPFsWcgf1syWyBzAWth/3o-2048x1229/v1/c700x420.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+
+.home-body {
+  text-align: center;
+  padding-top: 48px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.people-tell {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.actLink {
+  text-decoration: none;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  color: teal;
+}
+
+.actLink:hover {
+  text-decoration: none;
+  color: teal;
+}
+
+.contact {
+  /*
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('https://img.grouponcdn.com/iam/3ofGLASK6uPFsWcgf1syWyBzAWth/3o-2048x1229/v1/c700x420.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;*/
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('https://www.thanyapura.com/wp-content/uploads/2017/08/shutterstock_149828975.jpg') no-repeat fixed;
+  background-size: cover;
+  background-position: top;
+}
+
+.details {
+  text-align: center;
+  color: #d8d8d8;
+  padding-top: 70px;
+  padding-bottom: 290px;
+}
+
+.contact-links {
+  color: #d8d8d8;
+}
+
+.contact-links:hover {
+  text-decoration: none;
+  color: #d8d8d8;
+}
+
+.details h2 {
+  padding: 20px;
+}
+
+.fa-instagram {
+  color: #e4405f;
+}
+
+.fa-facebook {
+  color: #3b5999;
+}
+
+@media (max-width: 450px) {
+  .details {
+    padding-top: 30px;
+  }
+}
+
+.openV {
+  width: 45%;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 650px) {
+  .openV {
+    width: 90%;
+  }
+}
+
+.about {
+  text-align: center;
+  width: 50%;
+  margin: 20px auto;
+  line-height: 30px;
+}
+
+.about h1 {
+  padding-bottom: 20px;
+}
+
+.about-list {
+  text-align: right;
+  list-style: none;
+}
+
+.about-underline {
+  text-decoration: underline;
+}
+
+.about-bg {
+  background-color: #d8d8d8;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+  padding-top:10px;
+}
+
+.about {
+  background-color: #eee;
+  opacity: 0.8;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+@media (max-width: 750px) {
+  .about {
+    width: 80%;
+  }
+}
+
+.movement-page {
+  text-align: center;
+  margin-top: 20px;
+}
